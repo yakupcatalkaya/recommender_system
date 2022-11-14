@@ -31,3 +31,6 @@ The deployable deficiency of the model is the dataset does not contain sensitive
 The age value is important to filter out the adult contents for nonadult users. Therefore, the recommendation
 system could cause legal problems. There could be another csv file that gives us the information about 
 the adult/general content label. So we can ignore adoult content while recommending a movie to a nonadult user.
+
+# Reference
+F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. https://doi.org/10.1145/2827872
