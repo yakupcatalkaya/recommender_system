@@ -31,10 +31,16 @@ To extact dataset from zip file, -e True should be written.
 
 To download the dataset from its source, -d True should be written.
 
-To get top 5 recommended movies, you should write
+To get top 5 recommended movies, you should just write:
+```console
+python recommend.py -t True -i 123 -e True -d True
+```
+
+To get top 5 recommended movies, you should write (with alternative path):
 ```console
 python recommend.py -t True -p 'path/to/file' -i 123 -e True -d True
 ```
+
 
 # __Question 2__
 
