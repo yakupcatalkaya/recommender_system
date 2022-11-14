@@ -58,7 +58,7 @@ def download_file(url):
     
     
 argument_list  = sys.argv[1:]
-options = "tpued:"
+options = "h:t:p:u:e:d:"
 long_options = ["train", "path", "userId", "extract", "download"]
 train_model = "True"
 current_directory = os.path.abspath(os.path.dirname(sys.argv[0]))
