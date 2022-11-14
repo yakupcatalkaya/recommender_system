@@ -48,12 +48,12 @@ To download the dataset from its source, -d True should be written.
 
 To get top 5 recommended movies, you should just write:
 ```console
-python recommend.py -t True -i 123 -e True -d True
+python recommend.py -u 123
 ```
 
 To get top 5 recommended movies, you should write (with alternative path):
 ```console
-python recommend.py -t True -p 'path/to/file' -i 123 -e True -d True
+python recommend.py -t True -p 'path/to/file' -u 123 -e True -d True
 ```
 
 
