@@ -62,6 +62,7 @@ options = "tpued:"
 long_options = ["train", "path", "userId", "extract", "download"]
 train_model = "True"
 current_directory = os.path.abspath(os.path.dirname(sys.argv[0]))
+os.chdir(current_directory)
 extract = "True"
 user_index = 123
 download = "True"
