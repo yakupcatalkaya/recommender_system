@@ -60,11 +60,11 @@ def download_file(url):
 argument_list  = sys.argv[1:]
 options = "tpued:"
 long_options = ["train", "path", "userId", "extract", "download"]
-train_model = True
+train_model = "True"
 current_directory = os.getcwd()
-extract = True
+extract = "True"
 user_index = 123
-download = True
+download = "True"
 
 try:
     arguments, values = getopt.getopt(argument_list, options, long_options)
@@ -87,10 +87,10 @@ try:
 except Exception as e:
     print(e)
     
-if download==True:
+if download=="True":
     download_file("https://files.grouplens.org/datasets/movielens/ml-25m.zip")
 
-if extract==True:                     
+if extract=="True":                     
     extact_zip(current_directory)           
 
 os.chdir(current_directory + "/ml-25m")
@@ -120,7 +120,7 @@ n_latent_factors = 50
 n_movies=len(ratings['movieId'].unique())
 n_users=len(ratings['userId'].unique())
 
-if train_model==True:
+if train_model=="True":
     user_input = Input(shape=(1,), name='user_input', dtype='int64')
     user_embedding = Embedding(n_users, n_latent_factors, name='user_embedding')(user_input)
     user_vec = Flatten(name='FlattenUsers')(user_embedding)
