@@ -188,7 +188,7 @@ y_pred_nn.sort_values(by=['rating'], inplace=True, ascending=False)
 recommend_count = 0
 already_watched = ratings[ratings["userId"]==123]["movieId"].tolist()
 
-print("__User", user_index, "Recommendations__\n")
+print("__User", str(user_index), "Recommendations__\n")
 for index, row in y_pred_nn.iterrows():
     if not recommend_count==5:
         if not int(row.movieId) in already_watched:
