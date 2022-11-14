@@ -1,6 +1,21 @@
 # recommender_system  
 by Yakup Çatalkaya
 
+# Requirements
+```console
+os
+sys
+getopt
+requests
+shutil
+numpy
+pandas
+matplotlib
+zipfile
+keras
+tensorflow
+```
+
 # __Question 1__
 For dependencies, you should install all requirements by writing 
 ```console
