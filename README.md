@@ -59,7 +59,7 @@ python recommend.py -t True -p 'path/to/file' -u 123 -e True -d True
 
 # __Question 2__
 
-The deployable deficiency of the model is the dataset does not contain sensitive formats such as age values. 
+The deployable deficiency of the model is the dataset does not contain important formats such as age values. 
 The age value is important to filter out the adult contents for nonadult users. Therefore, the recommendation
 system could cause legal problems. There could be another csv file that gives us the information about 
 the adult/general content label. So we can ignore adoult content while recommending a movie to a nonadult user.
