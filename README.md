@@ -51,7 +51,7 @@ To get top 5 recommended movies, you should just write:
 python recommend.py -u 123
 ```
 
-To get top 5 recommended movies, you should write (with alternative path):
+To get top 5 recommended movies, you should write (with all parameters):
 ```console
 python recommend.py -t True -p 'path/to/file' -u 123 -e True -d True
 ```
