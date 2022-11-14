@@ -42,7 +42,7 @@ To give a new path, -p 'path/to/file' should be written.
 
 To specify userId, -u anyInteger should be written.
 
-To extact dataset from zip file, -e True should be written.
+To extract dataset from zip file, -e True should be written.
 
 To download the dataset from its source, -d True should be written.
 
