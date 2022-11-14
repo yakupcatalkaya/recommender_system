@@ -20,9 +20,20 @@ By using Tensorflow, I have created Input, Embedding and Flatten layers for reco
 After that, I have created Simple Feed-Forward Neural Network stacked to Embedding layer.
 By splitting data into train and validation set, I havel also tried to tune hyperparameter.
 
+```console
+python recommend.py -t True -p 'path/to/file' -i 123 -e True
+```
+To train a model, -t True  should be written.
+
+To give a new path, -p 'path/to/file' should be written.
+
+To specify userId, -u anyInteger should be written.
+
+To extact dataset from zip file, -e True should be written.
+
 To get top 5 recommended movies, you should write
 ```console
-python recommend.py userId
+python recommend.py -i 123
 ```
 
 # __Question 2__
