@@ -6,7 +6,7 @@ For dependencies, you should install all requirements by writing
 ```console
 pip install requirements.txt
 ```
-I have chosen MovieLens 25M Dataset. The first 1M line which contains 6748 user and 16000 movies and corresponding ratings.
+I have chosen MovieLens 25M Dataset. The first 1M line which contains 6748 user and 21952 movies and corresponding ratings.
 All Nan values filled with 0.0 in the sparse matrix.
 "ratings.csv" contains userId, movieId, rating, timestamp columns.
 The lines within this file are ordered first by userId, then, within user, by movieId.
