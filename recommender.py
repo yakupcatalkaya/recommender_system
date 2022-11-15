@@ -77,7 +77,7 @@ try:
             current_directory = currentValue
             
         elif currentArgument in ("-u", "--userId"):
-            user_index = currentValue
+            user_index = int(currentValue)
         
         elif currentArgument in ("-e", "--extract"):
             extract = currentValue
@@ -174,7 +174,7 @@ else:
     nn_model = keras.models.load_model("neuralnet_model.h5")
 
 
-x_test = pd.DataFrame(np.stack(([0]*len(movies), movies),axis=1), columns=train.columns.tolist()[:2])
+x_test = pd.DataFrame(np.stack(([user_index]*len(movies), movies),axis=1), columns=train.columns.tolist()[:2])
 
 y_predicted = model.predict([x_test.userId, x_test.movieId])[:,0]
 y_predicted_nn = nn_model.predict([x_test.userId, x_test.movieId])[:,0]
@@ -186,7 +186,7 @@ y_pred.sort_values(by=['rating'], inplace=True, ascending=False)
 y_pred_nn.sort_values(by=['rating'], inplace=True, ascending=False)
 
 recommend_count = 0
-already_watched = ratings[ratings["userId"]==123]["movieId"].tolist()
+already_watched = ratings[ratings["userId"]==user_index]["movieId"].tolist()
 
 print("__User", str(user_index), "Recommendations__\n")
 for index, row in y_pred_nn.iterrows():
